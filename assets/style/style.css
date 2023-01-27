@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+header{
+    min-height: 10vh;
+    background-color: aqua;
+}
+
+.container-fluid{
+
+    /* border: 3px solid green; */
+}
+
+.navbar-brand img{
+    margin-left: 1rem;
+    width: 15rem;
+   /*  border: 3px solid red; */
+}
+
+#navbarNav  li a{
+    margin: 0 0.3rem;
+    background-color: rgb(221, 42, 191);
+    border-radius: 10px;
+    width: 8.9rem;
+    text-align: center;
+    /* height: 4rem; */
+    /* border: 3px solid blue; */
+}
+/* title */
+.title{
+    padding: 1.5rem 1rem;
+}
+
+/* filter */
+.home form{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:space-around;
+   /*  border: 3px solid blue;  */
+}
+
+.home form .search{
+    display: flex;
+   /*  flex-direction: column; */
+}
+
+.home label{
+    padding-left: 2rem;
+}
+
+.home #search{
+    margin-left: 4rem;
+   /*  border: 3px solid red;  */
+}
+
+.home .search-input input{
+    width: 18rem; /* 10rem */
+    height: 2rem;
+    /* border: 5px solid green; */
+}
+
+.home .submit{
+    width: 5rem;
+   /*  border: 3px solid red; */
+}
+
+
+
+/* cards */
+
+.card{
+    /* margin: 0.01rem; */
+    /* margin: 1rem; */
+    margin-top: 2rem;
+    border: 1px solid blue;
+}
+
+.card-img-top{
+    margin-top: 0.5rem;
+    min-height:12rem;
+    object-fit: cover;
+}
+
+main{
+    min-height: 80vh;
+    background-color: rgb(221, 42, 191);
+}
+/* *********** */
+/* CONTACT US */
+/* ********* */
+.contact form {
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: auto;
+   /*  border: 3px solid red; */
+}
+
+.contact .input{
+    width: 18rem;
+    /* border: 3px solid blue; */
+}
+
+.contact label{
+    
+    /* border: 2px solid green; */
+}
+
+.contact .submit{
+    margin-left: auto;
+    width: 5rem;
+   /*  border: 2px solid yellow; */
+}
+
+/* ******* */
+/* DEATIL */
+/* ***** */
+.container-card{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.detail .container-card{
+    display: flex;
+    /* flex-direction: column; */
+    width: 840px;
+    height: 440px;
+    margin: auto;
+   /*  border: 2px solid red; */
+}
+
+.detail .container-card img{
+    width: 400px;
+    height: 400px;
+    padding-right: 1rem;
+    object-fit: cover;
+   /* background-color: blue; */
+}
+
+.detail .container-card .text-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 400px;
+    height: 400px;
+    /* background-color: green; */
+    /* border: 3px solid green; */
+}
+
+
+/* table */
+
+.table table, tr, th, td { /* para dar borde a la tabla entera */
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+
+
+.table table, tr, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* text-align: center; */
+    margin: auto;
+    padding: 0.2rem;
+    background-color: rgb(191, 214, 230);
+}
+
+.table thead{
+    font-size: 2rem;
+    text-align: left;
+    height: 2rem;
+   /*  border: 3px solid red; */
+}
+
+
+
+
+.table .columns {
+    width: 25rem;
+}
+
+
+
+/* ******* */
+/* FOOTER */
+/* ***** */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+   /*  background-color: blue; */
+}
+
+.rss{
+    display: flex;
+}
+
+.rss .fa-brands{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding-top: 0.4rem;
+    margin: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.cohort{
+    margin: 1rem;
+    font-size: 1.5rem; 
+}
+
+/* *************** */
+/* MEDIAS-QUERIES */
+/* ************* */
+
+@media (min-width:320px) and (max-width:767px) {
+     /* filter */
+    .home form{
+        /* display: flex; */
+        flex-direction: column;
+        /* justify-content:space-around; */
+        align-items: center;
+        border: 3px solid blue; 
+    }
+
+    .home form .search{
+        /* display: flex; */
+      flex-direction: column;
+    }
+
+    .home label{
+        /* padding-left: 2rem; */
+        padding-left: 0rem;
+        padding-top: 1rem;
+
+    }
+
+    .home #search{
+        /* margin-left: 4rem; */
+        margin-left: 0rem;
+     border: 3px solid yellow; 
+    }
+
+    .home .search-input input{
+        /* width: 18rem; */
+        width: 10rem;
+        height: 2rem;
+        border: 5px solid green;
+    }
+
+    .home .submit{
+        width: 5rem;
+     border: 3px solid red;
+    }
+
+
+    /* ******* */
+    /* FOOTER */
+    /* ***** */
+    footer{
+        flex-direction: column;
+    }
+    /* ****** */
+    /* TABLE */
+    /* **** */
+    .table table, tr, th, td {
+        padding: 0.1rem;
+        font-size: 0.8rem;
+    }
+    
+    .table .columns {
+        width: 15rem;
+    }
+
+    /* ******* */
+    /* DEATIL */
+    /* ***** */
+    .container-card{
+       /*  margin: 1rem;
+        padding: 1rem; */
+    }
+
+    .detail .container-card{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 340px;
+        margin: auto;
+    /*  border: 2px solid red; */
+    }
+
+    .detail .container-card img{
+        width: 400px;
+        height: 400px;
+       /*  padding-right: 1rem; */
+        object-fit: cover;
+    /* background-color: blue; */
+    }
+
+    .detail .container-card .text-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        width: 400px;
+        height: 400px;
+        /* background-color: green; */
+        /* border: 3px solid green; */
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px) {
+    /* filter */
+    .home form{
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid blue; 
+    }
+
+    .home label{
+        padding-left: 0rem;
+        padding-top: 1rem;
+        margin-left: 1rem;
+
+    }
+
+    .home #search{
+     margin-left: 0rem;
+     border: 3px solid yellow; 
+    }
+
+    .home .search-input input{
+        width: 10rem;
+        height: 2rem;
+        border: 5px solid green;
+    }
+
+    .home .submit{
+     width: 5rem;
+     border: 3px solid red;
+    }
+}
+
+@media (max-width:1024px) {
+    /* falta sección filter */
+
+   
+  
+}
+
+/* 
+a las cards 
+display flex
+flex-wrap
+
+*/
