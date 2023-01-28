@@ -10,10 +10,6 @@ header{
     background-color: aqua;
 }
 
-.container-fluid{
-
-    /* border: 3px solid green; */
-}
 
 .navbar-brand img{
     margin-left: 1rem;
@@ -123,32 +119,37 @@ main{
 .container-card{
     margin: 1rem;
     padding: 1rem;
+    width: 300px;
+    min-height: 25rem;
 }
 
 .detail .container-card{
     display: flex;
     /* flex-direction: column; */
     width: 840px;
-    height: 440px;
+    height: 180px;
     margin: auto;
-   /*  border: 2px solid red; */
+    background-color: blueviolet;
+    border-radius: 30px;
+    border: 2px solid red;
 }
 
 .detail .container-card img{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     padding-right: 1rem;
     object-fit: cover;
+    border-radius: 40px;
    /* background-color: blue; */
 }
 
 .detail .container-card .text-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     padding: 1rem;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     /* background-color: green; */
     /* border: 3px solid green; */
 }
@@ -287,9 +288,12 @@ footer{
     /* ******* */
     /* DEATIL */
     /* ***** */
+
     .container-card{
-       /*  margin: 1rem;
-        padding: 1rem; */
+        margin: 1rem;
+        padding: 1rem;
+        width: 50rem;
+        min-height: 25rem;
     }
 
     .detail .container-card{
