@@ -19,7 +19,7 @@ header{
 
 #navbarNav  li a{
     margin: 0 0.3rem;
-    background-color: rgb(221, 42, 191);
+    background-color: rgb(214, 19, 85);
     border-radius: 10px;
     width: 8.9rem;
     text-align: center;
@@ -68,11 +68,19 @@ header{
 
 /* cards */
 
+#cards-js{
+    background-color: red;
+/*     display: flex;
+    width: 100px; */
+    
+    
+}
+
 .card{
     /* margin: 0.01rem; */
     /* margin: 1rem; */
     margin-top: 2rem;
-    border: 1px solid blue;
+    border: 1px solid rgb(214, 19, 85);
 }
 
 .card-img-top{
@@ -83,7 +91,7 @@ header{
 
 main{
     min-height: 80vh;
-    background-color: rgb(221, 42, 191);
+    background-color: rgb(232, 210, 166);
 }
 /* *********** */
 /* CONTACT US */
@@ -120,18 +128,21 @@ main{
     margin: 1rem;
     padding: 1rem;
     width: 300px;
-    min-height: 25rem;
-}
+   /*  min-height: 25rem; */
+    padding-bottom: 2rem;
+    /*  border: 3px solid green; */
+} 
 
 .detail .container-card{
     display: flex;
     /* flex-direction: column; */
-    width: 840px;
-    height: 180px;
+    width: 640px;
+    height: 380px;
     margin: auto;
-    background-color: blueviolet;
-    border-radius: 30px;
-    border: 2px solid red;
+    
+    background-color: rgb(243, 186, 205);
+    border-radius: 5px;
+    /* border: 2px solid red; */
 }
 
 .detail .container-card img{
@@ -139,7 +150,7 @@ main{
     height: 300px;
     padding-right: 1rem;
     object-fit: cover;
-    border-radius: 40px;
+    border-radius: 5px;
    /* background-color: blue; */
 }
 
@@ -198,7 +209,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     min-height: 10vh;
-   /*  background-color: blue; */
+    background-color: rgb(214, 19, 85);
 }
 
 .rss{
@@ -212,7 +223,7 @@ footer{
     text-align: center;
     padding-top: 0.4rem;
     margin: 1rem;
-    color: white;
+    color: rgb(214, 19, 85);
     background-color: black;
     border-radius: 50%;
 }
@@ -233,7 +244,7 @@ footer{
         flex-direction: column;
         /* justify-content:space-around; */
         align-items: center;
-        border: 3px solid blue; 
+        /* border: 3px solid blue;  */
     }
 
     .home form .search{
@@ -251,19 +262,19 @@ footer{
     .home #search{
         /* margin-left: 4rem; */
         margin-left: 0rem;
-     border: 3px solid yellow; 
+     /* border: 3px solid yellow;  */
     }
 
     .home .search-input input{
         /* width: 18rem; */
         width: 10rem;
         height: 2rem;
-        border: 5px solid green;
+       /*  border: 5px solid green; */
     }
 
     .home .submit{
         width: 5rem;
-     border: 3px solid red;
+     /* border: 3px solid red; */
     }
 
 
@@ -288,29 +299,20 @@ footer{
     /* ******* */
     /* DEATIL */
     /* ***** */
-
-    .container-card{
-        margin: 1rem;
-        padding: 1rem;
-        width: 50rem;
-        min-height: 25rem;
-    }
-
     .detail .container-card{
         display: flex;
         flex-direction: column;
-        width: 90%;
-        height: 340px;
+        width: 320px;
+        min-height: 450px;
         margin: auto;
+        /* border: 3px solid green; */
     /*  border: 2px solid red; */
     }
 
     .detail .container-card img{
-        width: 400px;
-        height: 400px;
-       /*  padding-right: 1rem; */
-        object-fit: cover;
-    /* background-color: blue; */
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
     }
 
     .detail .container-card .text-card{
@@ -318,9 +320,8 @@ footer{
         flex-direction: column;
         align-items: center;
         padding: 1rem;
-        width: 400px;
-        height: 400px;
-        /* background-color: green; */
+        width: 300px;
+        height: 270px;
         /* border: 3px solid green; */
     }
 }
@@ -330,7 +331,7 @@ footer{
     .home form{
         flex-direction: column;
         align-items: center;
-        border: 3px solid blue; 
+        /* border: 3px solid blue;  */
     }
 
     .home label{
@@ -342,18 +343,18 @@ footer{
 
     .home #search{
      margin-left: 0rem;
-     border: 3px solid yellow; 
+     /* border: 3px solid yellow;  */
     }
 
     .home .search-input input{
         width: 10rem;
         height: 2rem;
-        border: 5px solid green;
+        /* border: 5px solid green; */
     }
 
     .home .submit{
      width: 5rem;
-     border: 3px solid red;
+     /* border: 3px solid red; */
     }
 }
 
