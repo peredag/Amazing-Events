@@ -26,4 +26,23 @@ for (let eventoInfo of eventosInfo) {
 } 
 
 
+const checks = document.getElementById("checks")
+let filterChecks = Array.from( new Set( eventosInfo.map( evento => evento.category) ) ) .filter( categ => categ )
+//console.log(filterChecks)
+
+for (let check of filterChecks) { 
+    let divContainerCheck = document.createElement("div")
+    divContainerCheck.className = "checks-js"                         
+    divContainerCheck .innerHTML = `
+     
+        <label for="b">
+            ${check}
+            <input type="checkbox" name="yes" id="b" value="2">
+        </label>
+     
+        `
+     checks.appendChild(divContainerCheck)
+} 
+
+
 

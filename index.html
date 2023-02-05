@@ -50,47 +50,30 @@
   <main class="home">
 
     <section class="container">
-
-      <h2 class="text-center title">HOME</h2>
-
-      <form action="./" method="get">
-        <div class="search">
-          <label for="a">
-            Category 1
-            <input type="checkbox" name="yes" id="a" value="1">
-          </label>
-          <label for="b">
-            Category 2
-            <input type="checkbox" name="yes" id="b" value="2">
-          </label>
-          <label for="c">
-            Category 3
-            <input type="checkbox" name="yes" id="c" value="3">
-          </label>
-          <label for="d">
-            Category 4
-            <input type="checkbox" name="yes" id="d" value="4">
-          </label>
-          <label for="e">
-            Category 5
-            <input type="checkbox" name="yes" id="e" value="5">
-          </label>
+      <h2 class="text-center title">Home</h2>
+      <div class="cont-check-search">
+        <div id="checks">  <!-- checks llegando desde el js -->
 
         </div>
-        <div id="box-search">
-          <label for="s" id="search" class="search-input">
-            <input type="text" name="yes" id="s" placeholder="search">
-          </label>
-        </div>
-        <input type="submit" value="search" class="submit"></input>
-      </form>
-
-      <div class="row" id="row"> <!-- CARDS LLEGANDO DESDE EL JS -->
-        
+  
+        <form action="./" method="get" class="form-search">
+          <div id="box-search">
+            <label for="s" id="search" class="search-input">
+              <input type="text" name="yes" id="s" placeholder="search">
+            </label>
+          </div>
+          <input type="submit" value="search" class="submit"></input>
+        </form>
 
       </div>
-
+      
+      <div class="row" id="row"> 
+        
+      </div>
     </section>
+    <!-- <div class="row" id="row"> 
+        
+    </div> -->
   </main>
 
 
