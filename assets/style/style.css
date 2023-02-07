@@ -40,10 +40,16 @@ header{
 .checks-js{
    margin-left: 1.5rem;
 }
+/* SEARCH */
 
 .form-search{
     display: flex;
     margin: auto;
+}
+
+#result{
+
+    border: 3px solid red;
 }
 
 
