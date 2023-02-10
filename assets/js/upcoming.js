@@ -1,12 +1,14 @@
 const eventosInfo = data.events 
+const checks = document.getElementById("checks") //checkbox
+const main = document.getElementById("row")  //CARDS
 
-//checkbox 
-const checks = document.getElementById("checks")
-let filterChecks = Array.from( new Set( eventosInfo.map( evento => evento.category) ) ) .filter( categ => categ )
+let filterChecks = Array.from( new Set( eventosInfo.map( evento => evento.category) ) ) .filter( categ => categ ) //checkbox
 
-addCheckInner(filterChecks, checks)
+addCheckInner(filterChecks, checks) //checks
+addCard(eventosInfo, main) //CARDS
 
-function addCheckInner(array, element){
+
+function addCheckInner(array, element){ //checkbox
   let template = ''
   for( let check of array ){
     template += createCheck(check)
@@ -14,35 +16,30 @@ function addCheckInner(array, element){
   element.innerHTML += template
 }
 
-
-function createCheck(check){
+function createCheck(check){ //checkbox
   return `
-  <label for="b">
+  <label for="b" id="checkbox">
     ${check}
     <input type="checkbox" name="yes" id="b" value="2">
   </label>
   `
 }
 
-//CARDS
-const main = document.getElementById("row") 
 
-addCard(eventosInfo, main)
-
-
-function addCard(array, element){
+function addCard(array, element){ //CARDS
   let template = '' 
   for( let event of array ){
     if(event.date > data.currentDate){
       template += createCard(event)
     } 
+
   }
 
   element.innerHTML += template
 }
 
 
-function createCard(event){
+function createCard(event){ //CARDS
   return `
   <div class="card col-sm-12 col-md-4 col-lg-3 mb-1">
     <img src="${event.image}</h5>" class="card-img-top" alt="...">
