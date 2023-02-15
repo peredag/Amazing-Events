@@ -1,28 +1,19 @@
+import { addCardDetail} from './funciones.js'
 const container = document.getElementById('container-card')
-//console.log(window.location)
-const params = new URLSearchParams(location.search) /* (location.search) */
-const id = params.get( "id" ) 
-const eventosInfo = data.events 
-const evento = eventosInfo.find( evento => evento._id == id) 
+let events;
 
-addCard(evento)
-
-function addCard(array){
-  let template = '' 
-   template +=
-   `
-      <img src="${evento.image}" alt="">
-      <div class="text-card">
-        <h3>${evento.name}</h3>
-        <p>${evento.description}</p>
-        <p>${evento.category}</p>
-        <p>${evento.price}</p>
-        <p>${evento.capacity}</p>
-      </div>
-   `
-  container.innerHTML = template
-}
-
+fetch ("https://mindhub-xj03.onrender.com/api/amazing")
+    .then( data => data.json())
+    .then( res => {
+    events = res.events
+    const params = new URLSearchParams(location.search)
+    const id = params.get( "id" )
+    const evento = res.events.find( evento => evento._id == id) 
+    addCardDetail(evento, container)
+    
+    })
+    
+    .catch ( err => console.log(err))
 
 
     
