@@ -4,7 +4,7 @@ const table2 = document.getElementById('table2')
 const table3 = document.getElementById('table3')
 
 //API
-async function jsonEvents(){
+async function tablita(){
     try{
     var events = await fetch('https://mindhub-xj03.onrender.com/api/amazing')
     events = await events.json()
@@ -49,8 +49,6 @@ async function jsonEvents(){
     let filtroCategoria = new Set(pastEvents.map(event => event.category))
     filtroCategoria = [...filtroCategoria]
 
-
-    
     let datoCategoria = [...new Set (todosLosEventos.map(event => event.category))]
 
     datoCategoria.forEach(element => {
@@ -96,6 +94,6 @@ async function jsonEvents(){
     });   
 }
 
-jsonEvents()
+tablita()
 
 

@@ -36,9 +36,12 @@ header{
 
 #checks{
     display: flex;
+    margin-left: 0.2rem;
+   /*  border:2px solid red; */
 }
-.checks-js{
-   margin-left: 1.5rem;
+.checks-js2{
+   margin-left: 0.5rem;
+   border:2px solid red;
 }
 /* SEARCH */
 
@@ -74,6 +77,11 @@ header{
 main{
     min-height: 80vh;
     background-color: rgb(232, 210, 166);
+}
+
+h6{
+    color:red;
+    font-size: 6rem;
 }
 /* *********** */
 /* CONTACT US */
@@ -275,6 +283,7 @@ footer{
     #checks{
         display: flex;
         flex-wrap: wrap;
+       
     }
     .checks-js{
         width: 12rem;
