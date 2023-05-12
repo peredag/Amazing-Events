@@ -21,11 +21,14 @@ header{
     border-radius: 10px;
     width: 8.9rem;
     text-align: center;
+    color: white;
+    font-weight: 480;
 }
 
 /* title */
 .title{
     padding: 1.5rem 1rem;
+    color: rgb(214, 19, 85);
 }
 
 /* filter */
@@ -37,35 +40,19 @@ header{
 #checks{
     display: flex;
     margin-left: 0.2rem;
-   /*  border:2px solid red; */
 }
 .checks-js2{
    margin-left: 0.5rem;
-   border:2px solid red;
 }
 /* SEARCH */
-
 .form-search{
     display: flex;
     margin: auto;
 }
 
-#result{
-
-    border: 3px solid red;
-}
-
-
-
 /* cards */
-
-#cards-js{
-    background-color: red;   
-}
-
 .card{
     margin-top: 2rem;
-    border: 1px solid rgb(214, 19, 85);
 }
 
 .card-img-top{
@@ -73,10 +60,56 @@ header{
     min-height:12rem;
     object-fit: cover;
 }
+/* --------------------- */
+.card-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.card-container section {
+    height: 25rem;
+    width: 15rem;
+    padding-bottom: .8rem;
+}
+
+.card-container section .card-img {
+    height: 50%;
+    width: 90%;
+    margin: .5rem auto;
+}
+
+.card-container section .card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.card-container section .card-body{
+    height: 50%;
+    width: 95%;
+    margin: 0 auto;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+}
+
+.card-container section .card-body>div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-container section .card-body>div>a {
+    background-color: #cc0026;
+    color: #efefef;
+}
+
 
 main{
     min-height: 80vh;
-    background-color: rgb(232, 210, 166);
+    background-color: rgb(226, 220, 220);
 }
 
 h6{
@@ -105,38 +138,27 @@ h6{
 /* ******* */
 /* DEATIL */
 /* ***** */
-.container-card{
-    margin: 1rem;
-    padding: 1rem;
-    width: 300px;
-    padding-bottom: 2rem;
-} 
 
 .detail .container-card{
     display: flex;
-    width: 640px;
-    height: 380px;
+    width: 45%;
     margin: auto;
-    background-color: rgb(243, 186, 205);
-    border-radius: 5px;
+    background-color: #e08696;
+    border-radius: 10px;
 }
 
 .detail .container-card img{
-    width: 300px;
-    height: 300px;
-    padding-right: 1rem;
-    object-fit: cover;
-    border-radius: 5px;
+    width: 320px;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 .detail .container-card .text-card{
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    padding: 1rem;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    padding: 0.5rem;
 }
+
+   
 
 
 /* table */
@@ -145,8 +167,13 @@ h6{
     border: 1px solid black;
     border-collapse: collapse;
     margin: auto;
+   
 }
 
+.table table{
+    width: 90%;
+    height: 95%;
+}
 
 
 .table table, tr, th, td {
@@ -227,7 +254,6 @@ footer{
     }
 
 
-
     /* ******* */
     /* FOOTER */
     /* ***** */
@@ -250,27 +276,25 @@ footer{
     /* DEATIL */
     /* ***** */
     .detail .container-card{
-        display: flex;
-        flex-direction: column;
-        width: 320px;
-        min-height: 450px;
-        margin: auto;
-    }
-
-    .detail .container-card img{
-        width: 300px;
-        height: 300px;
-        object-fit: contain;
-    }
-
-    .detail .container-card .text-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        width: 300px;
-        height: 270px;
-    }
+         display: flex;
+         flex-direction: column;
+         width: 95%;
+         padding: 1rem;
+         background-color: #e08696;
+         border-radius: 10px;
+     }
+     
+     .detail .container-card img{
+         width: 320px;
+         object-fit: contain;
+         padding: 0.5rem;
+         border-radius: 10px;
+     }
+     
+     .detail .container-card .text-card{
+         width: 320px;
+         padding: 0.5rem;
+     }   
 }
 
 @media (min-width:768px) and (max-width:1023px) {
@@ -295,18 +319,35 @@ footer{
         margin: auto;
     }
 
+    /* ******* */
+    /* DEATIL */
+    /* ***** */
+    .detail .container-card{
+         display: flex;
+         width: 90%;
+         margin: auto;
+         background-color: #e08696;
+         border-radius: 10px;
+     }
+     
+     .detail .container-card img{
+         width: 320px;
+         padding: 0.5rem;
+         border-radius: 10px;
+     }
+     
+     .detail .container-card .text-card{
+         width: 320px;
+         padding: 0.5rem;
+     } 
 }
 
 @media (max-width:1024px) {
-    
-
-   
-  
+ 
 }
 
 /* 
 a las cards 
 display flex
 flex-wrap
-
 */

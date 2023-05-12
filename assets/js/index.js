@@ -1,5 +1,5 @@
 import { addCards, addCheck, filtroCheck, filtradoDeBuscador } from './funciones.js'
-const containerCards = document.getElementById("row")  
+const containerCards = document.getElementById("home-card-container")
 const checks = document.getElementById("checks-container")
 const search = document.getElementById("form");
 

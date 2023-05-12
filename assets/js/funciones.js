@@ -1,20 +1,25 @@
 export function addCards(array, elementoH) {
     if(array.length === 0) {
-        return  elementoH.innerHTML = `<h6> Oops! no econtramos lo que buscabas!<h6>`
+        return  elementoH.innerHTML = `<h4> Oops! no econtramos lo que buscabas!<h4>`
     } 
     for (let evento of array) {
+   
     elementoH.innerHTML += `
-    <div class="card col-sm-12 col-md-4 col-lg-3 mb-1">
-      <img src="${evento.image}</h5>" class="card-img-top" alt="${evento.name}">
-      <div class="card-body">
-        <h5 class="card-title">${evento.name}</h5></h5>
-        <p class="card-text">${evento.description}</h5></p>
-        <div class="card-body">
-      
-          <a href="./assets/detail.html?id=${evento._id}&name=${evento.name}" class="card-link">Go!</a> 
+    <section class="card col-lg-2 col-12">
+        <div class="card-img">
+          <img src="${evento.image}" class="card-img-top" alt="${evento.name}">
         </div>
-      </div>
-    </div>`
+        <div class="card-body p-0 d-flex flex-column justify-content-center">
+          <h5 class="card-title text-center m-0">${evento.name}</h5>
+          <p class="text-center m-0">
+            ${evento.description}
+          </p>
+          <div>
+            <p class="m-0">Price: $${evento.price}</p>
+            <a href="./assets/detail.html?id=${evento._id}" class="btn p-1">Details</a>
+          </div>
+        </div>
+      </section>`
     }
 }
 
@@ -46,13 +51,15 @@ export function filtradoDeBuscador(array, inputUsuario){
 
 export function addCardDetail(array, elementoH) {
 
-    elementoH.innerHTML = `<img src="${array.image}" alt="">
+    elementoH.innerHTML = `
+    <img src="${array.image}" alt="">
     <div class="text-card">
       <h3>${array.name}</h3>
       <p>${array.description}</p>
-      <p>Category:  ${array.category}</p>
-      <p>Price:  ${array.price}</p>
+      <p>${array.category}</p>
+      <p>Price: $ ${array.price}</p>
       <p>Capacity:  ${array.capacity}</p>
-    </div>` 
+    </div>
+    ` 
 
 }
