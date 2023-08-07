@@ -23,6 +23,7 @@ export function addCards(array, elementoH) {
     }
 }
 
+/*
 export function addCheck ( array , elementoH) { 
     let aux = "";
     array.forEach(element =>  {
@@ -30,10 +31,29 @@ export function addCheck ( array , elementoH) {
          <label for="${element}">
             ${element}
             <input type="checkbox" name="" id="${element}" value="${element}" class="checks-js2">
-        </label> `
+         </label> `
     });
     elementoH.innerHTML = aux; 
 }
+*/
+export function addCheck ( array , elementoH) { 
+  let aux = "";
+  array.forEach(element =>  {
+      aux += `
+        <input type="checkbox" name="checkbox-option" class="hc" id="${element}" value="${element}">
+        <label for="${element}">${element}</label>
+       `
+  });
+  elementoH.innerHTML = aux; 
+}
+
+/* 
+ <label for="${element}">
+          ${element}
+          <input type="checkbox" name="" id="${element}" value="${element}" class="hc">
+  </label>
+*/
+
 
 export function filtroCheck (array) {
     let marcarCheck = [...document.querySelectorAll("input[type='checkbox']:checked")].map((check) => check.value);  
